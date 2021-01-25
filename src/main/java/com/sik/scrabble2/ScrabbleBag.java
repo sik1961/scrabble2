@@ -5,10 +5,14 @@ import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 
 @Data
 @NoArgsConstructor
 public class ScrabbleBag {
+    private final Random random = new Random();
+
     private List<ScrabbleTile> tiles;
 
     public void initialise() {
@@ -19,7 +23,7 @@ public class ScrabbleBag {
         this.tiles.addAll(this.createMulti("D",2,4));
         this.tiles.addAll(this.createMulti("E",1,12));
         this.tiles.addAll(this.createMulti("F",4,2));
-        this.tiles.addAll(this.createMulti("G",2,4));
+        this.tiles.addAll(this.createMulti("G",2,3));
         this.tiles.addAll(this.createMulti("H",4,2));
         this.tiles.addAll(this.createMulti("I",1,9));
         this.tiles.addAll(this.createMulti("J",8,1));
@@ -48,5 +52,20 @@ public class ScrabbleBag {
             newTiles.add(new ScrabbleTile(letter,value));
         }
         return newTiles;
+    }
+
+    public List<ScrabbleTile> pick(int amount) {
+        List<ScrabbleTile> tiles = new ArrayList<>();
+        for(int i = 0; i<amount;i++) {
+            Optional<ScrabbleTile> picked = pickRandomTile();
+            if (picked.isPresent()) {
+                tiles.add(picked.get());
+            }
+        }
+        return tiles;
+    }
+
+    private Optional<ScrabbleTile> pickRandomTile() {
+        return this.tiles.isEmpty() ? Optional.empty() : Optional.of(this.tiles.remove(this.random.nextInt(this.tiles.size())));
     }
 }

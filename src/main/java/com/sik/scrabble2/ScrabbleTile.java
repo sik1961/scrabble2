@@ -5,6 +5,8 @@ import lombok.*;
 import java.util.UUID;
 
 @Getter
+@EqualsAndHashCode
+@ToString
 public class ScrabbleTile {
     private String id;
     private String letter;
