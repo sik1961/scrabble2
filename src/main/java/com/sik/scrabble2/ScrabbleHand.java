@@ -9,10 +9,12 @@ public class ScrabbleHand {
 
     private List<ScrabbleTile> hand;
     private int shitness;
+    private ScrabbleBag bag;
 
-    public ScrabbleHand() {
+    public ScrabbleHand(ScrabbleBag bag) {
         this.hand = new ArrayList<>();
         this.updateShitness();
+        this.bag = bag;
     }
 
     public ScrabbleHand(List<ScrabbleTile> hand) {

@@ -1,6 +1,7 @@
 import com.sik.scrabble2.ScrabbleBag;
 import com.sik.scrabble2.ScrabbleHand;
 import com.sik.scrabble2.ScrabbleTile;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -19,11 +20,17 @@ import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 
 public class ScrabbleHandTest {
 
+    private ScrabbleBag bag;
+
+    @Before
+    public void init() {
+        bag = new ScrabbleBag();
+    }
     @Test
     public void shouldCreateScrabbleHand() {
-        ScrabbleBag bag = new ScrabbleBag();
-        bag.initialise();
-        ScrabbleHand hand = new ScrabbleHand();
+//        ScrabbleBag bag = new ScrabbleBag();
+//        bag.initialise();
+        ScrabbleHand hand = new ScrabbleHand(bag);
         hand.addToHand(bag.pick(7));
 
         assertThat(bag.getTiles(), hasSize(93));
@@ -41,7 +48,7 @@ public class ScrabbleHandTest {
         ScrabbleTile st6 = new ScrabbleTile("A");
         ScrabbleTile st7 = new ScrabbleTile("A");
 
-        ScrabbleHand hand = new ScrabbleHand();
+        ScrabbleHand hand = new ScrabbleHand(bag);
         hand.addToHand(Arrays.asList(st1,st2,st3,st4,st5,st6,st7));
         assertThat(hand.getHand(), hasSize(7));
         assertThat(hand.getShitness(), is(7));
@@ -59,7 +66,7 @@ public class ScrabbleHandTest {
         ScrabbleTile st6 = new ScrabbleTile("N");
         ScrabbleTile st7 = new ScrabbleTile("N");
 
-        ScrabbleHand hand = new ScrabbleHand();
+        ScrabbleHand hand = new ScrabbleHand(bag);
         hand.addToHand(Arrays.asList(st1,st2,st3,st4,st5,st6,st7));
         assertThat(hand.getHand(), hasSize(7));
         assertThat(hand.getShitness(), is(1));
@@ -77,7 +84,7 @@ public class ScrabbleHandTest {
         ScrabbleTile st6 = new ScrabbleTile("N");
         ScrabbleTile st7 = new ScrabbleTile("N");
 
-        ScrabbleHand hand = new ScrabbleHand();
+        ScrabbleHand hand = new ScrabbleHand(bag);
         hand.addToHand(Arrays.asList(st1,st2,st3,st4,st5,st6,st7));
         assertThat(hand.getHand(), hasSize(7));
         assertThat(hand.getShitness(), is(1));

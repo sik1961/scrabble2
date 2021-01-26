@@ -26,7 +26,6 @@ public class ScrabbleSimulatorTest {
     public void shouldInitialiseScrabbleBag() {
 
         ScrabbleBag bag = new ScrabbleBag();
-        bag.initialise();
         bag.getTiles().forEach(System.out::println);
         assertThat(bag.getTiles(), hasSize(100));
 
@@ -36,7 +35,6 @@ public class ScrabbleSimulatorTest {
     public void shouldPickSevenLetters() {
 
         ScrabbleBag bag = new ScrabbleBag();
-        bag.initialise();
         List<ScrabbleTile> newTiles = bag.pick(7);
         assertThat(bag.getTiles(), hasSize(93));
         assertThat(newTiles, hasSize(7));
@@ -47,7 +45,6 @@ public class ScrabbleSimulatorTest {
     public void AdhoRun() {
 
         ScrabbleBag bag = new ScrabbleBag();
-        bag.initialise();
 
         List<ScrabbleTile> newTiles = bag.pick(7);
         printHand(newTiles,"Hand:" );
@@ -114,7 +111,6 @@ public class ScrabbleSimulatorTest {
     public void shouldSimulateGame() {
 
         ScrabbleBag bag = new ScrabbleBag();
-        bag.initialise();
 
         List<ScrabbleTile> player1 = bag.pick(7);
         List<ScrabbleTile> player2 = bag.pick(7);

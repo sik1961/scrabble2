@@ -9,13 +9,12 @@ import java.util.Optional;
 import java.util.Random;
 
 @Data
-@NoArgsConstructor
 public class ScrabbleBag {
     private static final Random RANDOM = new Random();
 
     private List<ScrabbleTile> tiles;
 
-    public void initialise() {
+    public ScrabbleBag() {
         this.tiles = new ArrayList<>();
         this.tiles.addAll(this.createMulti("A",9));
         this.tiles.addAll(this.createMulti("B",2));

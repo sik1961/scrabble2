@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b33d4947-7638-4cbd-9dfb-bb9b73d8ed1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleHand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/Scrabbler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/TileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ScrabbleHandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleBag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleHand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ScrabbleHandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ScrabbleHandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ScrabbleSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ScrabbleSimulatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +212,7 @@
       <updated>1611508215376</updated>
       <workItem from="1611508221179" duration="4373000" />
       <workItem from="1611567548147" duration="22236000" />
-      <workItem from="1611658860733" duration="4473000" />
+      <workItem from="1611658860733" duration="5540000" />
     </task>
     <servers />
   </component>
