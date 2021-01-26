@@ -128,7 +128,7 @@ public class ScrabbleSimulatorTest {
 
             if (!player1.isEmpty()) {
                 List<ScrabbleTile> p1toPlay = new ArrayList<>();
-                int p1numberToPlay = random.nextInt(player1.size());
+                int p1numberToPlay = player1.size()>1?random.nextInt(player1.size()):1;
                 for(int i=0;i<p1numberToPlay;i++) {
                     p1toPlay.add(player1.remove(random.nextInt(player1.size())));
                 }
@@ -151,7 +151,7 @@ public class ScrabbleSimulatorTest {
 
             if (!player2.isEmpty()) {
                 List<ScrabbleTile> p2toPlay = new ArrayList<>();
-                int p2numberToPlay = random.nextInt(player2.size());
+                int p2numberToPlay = player2.size()>1?random.nextInt(player2.size()):1;
                 for(int i=0;i<p2numberToPlay;i++) {
                     p2toPlay.add(player2.remove(random.nextInt(player2.size())));
                 }
