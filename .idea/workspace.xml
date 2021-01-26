@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b33d4947-7638-4cbd-9dfb-bb9b73d8ed1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/ScrabbleHandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/ScrabblerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleBag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sik/scrabble2/ScrabbleHand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ScrabbleHandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ScrabbleHandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ScrabbleSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ScrabbleSimulatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ScrabbleHandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ScrabbleSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ScrabbleSimulatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +130,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScrabbleSimulatorTest">
+  <component name="RunManager" selected="JUnit.ScrabblerTest.shouldCreateScrabbler">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -143,8 +146,8 @@
     </configuration>
     <configuration name="ScrabbleHandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scrabble2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrabbleHandTest" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ScrabbleHandTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,8 +155,8 @@
     </configuration>
     <configuration name="ScrabbleHandTest.shouldCreateScrabbleHand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scrabble2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrabbleHandTest" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ScrabbleHandTest" />
       <option name="METHOD_NAME" value="shouldCreateScrabbleHand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -162,28 +165,39 @@
     </configuration>
     <configuration name="ScrabbleSimulatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scrabble2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrabbleSimulatorTest" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ScrabbleSimulatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrabbleSimulatorTest.AdhoRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScrabblerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scrabble2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrabbleSimulatorTest" />
-      <option name="METHOD_NAME" value="AdhoRun" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ScrabblerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrabbleSimulatorTest.shouldScrabbleSimulator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScrabblerTest.shouldCreateScrabbler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scrabble2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrabbleSimulatorTest" />
-      <option name="METHOD_NAME" value="shouldScrabbleSimulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ScrabblerTest" />
+      <option name="METHOD_NAME" value="shouldCreateScrabbler" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ScrabblerTest.shouldCreateScrabbler" />
+        <item itemvalue="JUnit.ScrabblerTest" />
         <item itemvalue="JUnit.ScrabbleSimulatorTest" />
         <item itemvalue="JUnit.ScrabbleHandTest" />
         <item itemvalue="JUnit.ScrabbleHandTest.shouldCreateScrabbleHand" />
-        <item itemvalue="JUnit.ScrabbleSimulatorTest.AdhoRun" />
-        <item itemvalue="JUnit.ScrabbleSimulatorTest.shouldScrabbleSimulator" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +226,7 @@
       <updated>1611508215376</updated>
       <workItem from="1611508221179" duration="4373000" />
       <workItem from="1611567548147" duration="22236000" />
-      <workItem from="1611658860733" duration="5540000" />
+      <workItem from="1611658860733" duration="8283000" />
     </task>
     <servers />
   </component>

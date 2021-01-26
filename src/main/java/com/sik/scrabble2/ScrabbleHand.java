@@ -7,32 +7,32 @@ import java.util.List;
 public class ScrabbleHand {
 
 
-    private List<ScrabbleTile> hand;
+    private List<ScrabbleTile> tiles;
     private int shitness;
     private ScrabbleBag bag;
 
     public ScrabbleHand(ScrabbleBag bag) {
-        this.hand = new ArrayList<>();
+        this.tiles = new ArrayList<>();
         this.updateShitness();
         this.bag = bag;
     }
 
-    public ScrabbleHand(List<ScrabbleTile> hand) {
-        this.hand = hand;
+    public ScrabbleHand(List<ScrabbleTile> tiles) {
+        this.tiles = tiles;
         this.updateShitness();
     }
 
-    public List<ScrabbleTile> getHand() {
-        return hand;
+    public List<ScrabbleTile> getTiles() {
+        return tiles;
     }
 
-    public void setHand(List<ScrabbleTile> hand) {
-        this.hand = hand;
+    public void setTiles(List<ScrabbleTile> tiles) {
+        this.tiles = tiles;
         this.updateShitness();
     }
 
     public void addToHand(List<ScrabbleTile> tiles) {
-        hand.addAll(tiles);
+        this.tiles.addAll(tiles);
         this.updateShitness();
     }
 
@@ -44,7 +44,7 @@ public class ScrabbleHand {
         int vCount = 0;
         int cCount = 0;
         int bCount = 0;
-        for (ScrabbleTile tile:hand) {
+        for (ScrabbleTile tile: tiles) {
             switch (tile.getType()) {
                 case BLANK:  bCount++;
                     break;

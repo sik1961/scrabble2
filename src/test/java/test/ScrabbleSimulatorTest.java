@@ -1,3 +1,5 @@
+package test;
+
 import com.sik.scrabble2.ScrabbleBag;
 import com.sik.scrabble2.ScrabbleTile;
 import org.junit.Test;
@@ -5,18 +7,10 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
-import static org.hamcrest.CoreMatchers.hasItems;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
-import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.CoreMatchers.nullValue;
+import static com.sik.scrabble2.ScrabbleConstants.SEVEN;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
-import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 
 public class ScrabbleSimulatorTest {
 
@@ -35,9 +29,9 @@ public class ScrabbleSimulatorTest {
     public void shouldPickSevenLetters() {
 
         ScrabbleBag bag = new ScrabbleBag();
-        List<ScrabbleTile> newTiles = bag.pick(7);
+        List<ScrabbleTile> newTiles = bag.pick(SEVEN);
         assertThat(bag.getTiles(), hasSize(93));
-        assertThat(newTiles, hasSize(7));
+        assertThat(newTiles, hasSize(SEVEN));
         newTiles.forEach(System.out::println);
     }
 
@@ -46,63 +40,63 @@ public class ScrabbleSimulatorTest {
 
         ScrabbleBag bag = new ScrabbleBag();
 
-        List<ScrabbleTile> newTiles = bag.pick(7);
+        List<ScrabbleTile> newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
 
-        newTiles = bag.pick(7);
+        newTiles = bag.pick(SEVEN);
         printHand(newTiles,"Hand:" );
         newTiles.clear();
     }
@@ -112,8 +106,8 @@ public class ScrabbleSimulatorTest {
 
         ScrabbleBag bag = new ScrabbleBag();
 
-        List<ScrabbleTile> player1 = bag.pick(7);
-        List<ScrabbleTile> player2 = bag.pick(7);
+        List<ScrabbleTile> player1 = bag.pick(SEVEN);
+        List<ScrabbleTile> player2 = bag.pick(SEVEN);
 
 
         while(!player1.isEmpty() && !player2.isEmpty()) {
